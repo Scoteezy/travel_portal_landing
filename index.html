@@ -17,14 +17,22 @@
         <div class="container">
             <div class="logo">
                 <img src="src/icons/logo.svg" alt="logo">
-                Travel Portal
+               <span> Travel Portal</span>
             </div>
                 <ul class="nav">
                     <li class="nav__link">How It Works</li>
                     <li class="nav__link">Plan Youe Trip</li>
                     <li class="nav__link">Destinations</li>
                     <li class="nav__link">Travel Stories</li>
+                    <li class="nav__link">Account</li>
+                    <li class="nav__link">Social media</li>
+
                 </ul>
+                <div class="hamburger ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             <button class="button button-nav">Login</button>
             </div>
         </nav>
@@ -71,12 +79,14 @@
     <section class="destinations">
         <div class="title">Popular destinations</div>
         <div class="destinations__slider">
+            <div class="destinations__slider-prev">
+                <i class="arrow left"></i>
+            </div>
             <div class="destinations__slider-wrapper">
                 <div class="destinations__slider-inner">
                     <div class="destinations__slide">
                         <img src="src/img/slider/spain.jpg" alt="spain">
                         <span class="destinations__slide__text">SPAIN</span>
-
                     </div>
                     <div class="destinations__slide">
                         <img src="src/img/slider/japan.jpg" alt="japan">
@@ -87,6 +97,9 @@
                         <span class="destinations__slide__text">USA</span>
                     </div>
                 </div>
+            </div>
+            <div class="destinations__slider-next">
+                <i class="arrow right"></i>
             </div>
         </div>
         <button class="button button-long"> <img src="src/icons/arrow.svg" alt=""><span> Find More</span></button>
