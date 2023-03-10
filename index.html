@@ -24,7 +24,7 @@
                     <li class="nav__link">Plan Youe Trip</li>
                     <li class="nav__link">Destinations</li>
                     <li class="nav__link">Travel Stories</li>
-                    <li class="nav__link">Account</li>
+                    <li class="nav__link" data-modal>Account</li>
                     <li class="nav__link">Social media</li>
 
                 </ul>
@@ -33,7 +33,7 @@
                     <span></span>
                     <span></span>
                 </div>
-            <button class="button button-nav">Login</button>
+            <button class="button button-nav" data-modal>Login</button>
             </div>
         </nav>
         <div class="subheader">
@@ -166,6 +166,42 @@
         </div>
     </footer>
     </section>
+    <div class="modal modal-reg">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <div class="modal__title">Create account</div>
+                    <span>Email</span> 
+                    <input required name="Email" type="email" class="modal__input">
+                    <span>Password</span> 
+                    <input required name="password" type="text" class="modal__input">
+                    <button class="btn btn_dark btn_min">Sign Up</button>
+                </form>
+                <div class="modal__extension">Already have an account? <a href="#" data-modal data-close>Log in</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-log">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__title">Log in to your account</div>
+                <button class="btn btn-facebook"><img src="src/icons/modal/facebook.svg" alt="facebook__icon"> Sign In with Facebook</button>
+                <button class="btn btn-google"><img src="src/icons/modal/google.svg" alt=""> Sign In with Google</button>
+                <p class="modal__choice">or</p>
+                <form action="#">
+                    <div data-close class="modal__close">&times;</div>
+                    <span>Email</span> 
+                    <input required name="Email" type="email" class="modal__input">
+                    <span>Password</span> 
+                    <input required name="password" type="text" class="modal__input">
+                    <button class="btn btn_dark btn_min">Sign in</button>
+                    <a class="modal__link" href="#">Forgot Your Password?</a>
+                </form>
+                <div class="modal__extension">Don't have an account? <a href="#" data-modal-reg data-close>Register</a></div>
+            </div>
+        </div>
+    </div>
     <script src="src/js/script.js"></script>
 </body>
 </html>
